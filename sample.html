@@ -1,0 +1,98 @@
+<html>
+<body style="background-color:#87ad51;">
+<body>
+      <img src="logo.png" width="200"
+         height="120">
+		 
+		 <head>
+
+<style>
+function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+    }
+    
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+.dropbtn {
+  position: fixed;
+  top: 8;
+  right: 700;
+  background-color: #bce681;
+  font-style: Courier;
+  color: black;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  width: 200;
+  height: 120;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 55px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #87ad51;
+}
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">H O M E
+  </button>
+  <div id="myDropdown" class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+ </div>
+  </button>
+ 
+</head> 
+</body>
+
+
+
+</html>
